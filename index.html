@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz</title>
+<link href="style.css" rel="stylesheet">
+<script src="script.js"></script>
+ 
+</head>
+<body>
+ <div class="content">
+<h1>Simple Javascript Quiz</h1>
+
+<div>
+<form id="quiz" name="quiz">
+<ul>
+    <li>
+    <p>Which language runs in a web browser? </p>
+    <input type="radio" id="mc" name="question1" value="Java">Java<br>
+    <input type="radio" id="mc" name="question1" value="C">C<br>
+    <input type="radio" id="mc" name="question1" value="Python">Python<br>
+    <input type="radio" id="mc" name="question1" value="Javascript">JavaScript<br>
+    </li>
+ 
+    <li>
+    <p>What does CSS stand for?</p>
+    <input type="radio" id="mc" name="question2" value="Central Style Sheets">Central Style Sheets<br>
+    <input type="radio" id="mc" name="question2" value="Cascading Style Sheets">Cascading Style Sheets<br>
+    <input type="radio" id="mc" name="question2" value="Cascading Simple Sheets">Cascading Simple Sheets<br>
+    <input type="radio" id="mc" name="question2" value="Cars SUVs Sailboats">Cars SUVs Sailboats<br>
+    </li>
+ 
+
+    <li>
+    <p>What does HTML stand for?</p>
+    <input type="radio" id="mc" name="question3" value="Hypertext Markup Language">Hypertext Markup Language<br>
+    <input type="radio" id="mc" name="question3" value="Hypertext Markdown Language">Hypertext Markdown Language<br>
+    <input type="radio" id="mc" name="question3" value="Hyperloop Machine Language">Hyperloop Machine Language<br>
+    <input type="radio" id="mc" name="question3" value="Helicopters Terminals Motorboats Lamborginis">Helicopters Terminals Motorboats Lamborginis<br>
+    </li>
+
+
+    <li>
+    <p>What year was JavaScript launched?</p>
+    <input type="radio" id="mc" name="question4" value="1996">1996<br>
+    <input type="radio" id="mc" name="question4" value="1995">1995<br>
+    <input type="radio" id="mc" name="question4" value="1994">1994<br>
+    <input type="radio" id="mc" name="question4" value="none">None Of the Above<br>
+    </li>
+
+    <li>
+    <p>Which of the following keywords is used to define a variable in Javascript?</p>
+    <input type="radio" id="mc" name="question5" value="var">var<br>
+     <input type="radio" id="mc" name="question5" value="let">let<br>
+    <input type="radio" id="mc" name="question5" value="both">Both<br>
+     <input type="radio" id="mc" name="question5" value="none">None Of the Above<br>
+  </li>
+
+</br>
+</ul>
+</form>
+
+</div>
+<div id="after_submit">
+<p id="message"></p>
+<p id="number_correct"></p>
+</div>
+
+<button id="button" value="Submit" onclick="check()">Submit</button>
+ 
+</div>
+</body>
+</html>
